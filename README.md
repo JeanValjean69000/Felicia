@@ -1,7 +1,7 @@
 📝 README.md:![AFTER TRENCHES, BEACH AND BITCHES (2)](https://github.com/user-attachments/assets/965b69da-cf6e-4c49-a32b-4311549cecaf)
 
 🤖 Felicia – Memecoin Trend and Profitability Prediction AI 🚀
-Felicia is an advanced artificial intelligence system designed to analyze social media trends, on-chain wallet activity, and market dynamics to predict profitable memecoins. By leveraging big data analytics, real-time data scraping, and machine learning models, Felicia can identify emerging cryptocurrency trends and provide actionable insights.
+Felicia is an advanced artificial intelligence system designed to analyze social media trends, on-chain wallet activity, and market dynamics to predict profitable memecoins. By leveraging big data analytics, real-time data scraping, and machine learning models, Felicia can identify emerging cryptocurrency trends and provide actionable insights. The code's concept is inspired by BlackRock's Aladdin tool but tailored to the world of memecoins.
 
 🛠️ System Architecture:
 Felicia is built with a highly modular, scalable, and distributed architecture that handles real-time data streaming, data processing, and machine learning tasks. The system is designed to be flexible for adding new data sources or integrating advanced prediction models.
