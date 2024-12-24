@@ -94,21 +94,4 @@ def preprocess_and_train_model(twitter_data, tiktok_data, web_mentions):
         "we
 
 
-Explanation of the Code:
-1. Data Scraping:
-Twitter Data: Scrapes tweets with a specific hashtag (e.g., "memecoin") using Tweepy.
-TikTok Data: Scrapes videos related to memecoins using the TikTokApi.
-Web Mentions: Scrapes web pages (e.g., CoinDesk, Reddit) for mentions of memecoins using BeautifulSoup.
-2. Preprocessing and Machine Learning:
-The preprocess_and_train_model function processes the data collected from Twitter, TikTok, and web mentions.
-We combine features like retweet count, likes, shares, comments, and web mentions.
-A Random Forest Classifier is trained to predict whether a memecoin will be profitable or not (binary classification).
-3. Model Training:
-The model is trained using train-test split and RandomForestClassifier.
-Confusion Matrix and Classification Report are displayed to evaluate model performance.
-4. Prediction:
-The script predicts whether a new memecoin (based on collected data) will be profitable or not profitable.
-5. Main Function:
-Collects all the data from Twitter, TikTok, and Web.
-Preprocesses the data and trains the model.
-Makes predictions for new data points.
+
