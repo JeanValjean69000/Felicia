@@ -1,5 +1,8 @@
 # Machine learning models for profitability prediction
-Here is a complete code for a machine learning project that could be integrated into the Felicia architecture, aimed at predicting the profitability of memecoins using data from social media trends (TikTok, Twitter), blockchain wallet movements, and market data. The model uses Scikit-Learn to train a Random Forest model for classifying profitable memecoins.
+Here is a complete code for a machine learning project that could be integrated into the Memelord AI architecture, 
+aimed at predicting the profitability of memecoins using data from social media trends (TikTok, Twitter), 
+blockchain wallet movements, and market data. 
+The model uses Scikit-Learn to train a Random Forest model for classifying profitable memecoins.
 
 Prerequisites
 You need structured training data, containing features like transaction volume, social mentions, price changes, wallet activity, etc.
