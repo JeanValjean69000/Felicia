@@ -1,13 +1,12 @@
-
 # ===============================
-# Felicia Configuration File
+# Memelord AI Configuration File
 # ===============================
 
 # ===============================
 # General Settings
 # ===============================
 [general]
-app_name = "Felicia"
+app_name = "Memelord AI"
 environment = "production"  # Options: development, testing, production
 port = 8090                 # Main listening port
 host = "0.0.0.0"            # Listening IP address
@@ -16,8 +15,8 @@ host = "0.0.0.0"            # Listening IP address
 maintenance_mode = false
 
 # Path to static and upload files
-static_files_path = "/var/www/felicia/static"
-uploads_path = "/var/www/felicia/uploads"
+static_files_path = "/var/www/memelord_ai/static"
+uploads_path = "/var/www/memelord_ai/uploads"
 
 # ===============================
 # Security
@@ -56,9 +55,9 @@ enable_2fa = true
 type = "postgres"  # Options: postgres, mysql, sqlite
 host = "localhost"
 port = 5432
-username = "felicia_user"
+username = "memelord_ai_user"
 password = "super_secret_password"
-database_name = "felicia_db"
+database_name = "memelord_ai_db"
 ssl = true
 pool_size = 20
 
@@ -102,7 +101,7 @@ level = "info"
 # Log format: text or json
 format = "json"
 # Log file path
-file_path = "/var/log/felicia/app.log"
+file_path = "/var/log/memelord_ai/app.log"
 # Log file rotation
 max_file_size = 10  # in MB
 max_backup_files = 5
@@ -116,7 +115,7 @@ smtp_server = "smtp.mailtrap.io"
 port = 587
 username = "email_user"
 password = "email_password"
-from_address = "noreply@felicia.com"
+from_address = "noreply@memelord_ai.com"
 use_tls = true
 
 # ===============================
@@ -187,10 +186,11 @@ proxy_port = 8080
 # ===============================
 [backup]
 enabled = true
-backup_path = "/var/backups/felicia"
+backup_path = "/var/backups/memelord_ai"
 frequency = "daily"
 retain_days = 7
 
 # ===============================
 # End of Configuration File
-# ===============================
+# ==============================="
+}
