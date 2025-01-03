@@ -1,5 +1,5 @@
-📝 README.md:
-![AFTER TRENCHES, BEACH AND BITCHES (2)](https://github.com/user-attachments/assets/965b69da-cf6e-4c49-a32b-4311549cecaf)
+![AFTER TRENCHES, BEACH AND BITCHES (5)](https://github.com/user-attachments/assets/19207bfe-1356-40e7-a219-4b23d14f697d)
+
 
 🤖 Memelord AI – Memecoin Trend and Profitability Prediction AI 🚀
 
