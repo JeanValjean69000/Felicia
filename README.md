@@ -10,22 +10,30 @@ MemeSentinel is built with a highly modular, scalable, and distributed architect
 
 Data Collection & Scraping:
 Real-time data ingestion using official APIs from TikTok, Twitter, and Etherscan.
+
 Web scraping is employed to collect data from trending pages, as many platforms have limited API access or rate-limiting issues.
+
 Data Processing & Feature Engineering:
 High-frequency data is cleaned and normalized using distributed processing tools like Apache Spark or Dask.
+
 Time-series analysis is performed to account for volatility and market changes.
+
 Predictive Modeling:
 A combination of supervised machine learning models such as Random Forests, Gradient Boosting Machines, and XGBoost are used.
 Advanced techniques like ensemble learning, hyperparameter optimization, and cross-validation are implemented to ensure high prediction accuracy.
+
 Real-Time Monitoring & Alerts:
 Continuous tracking of memecoin trends and wallet transactions to identify profitable opportunities.
 Real-time alerts are sent via WebSockets, email, or SMS using Twilio API.
+
 Visualization:
 Plotly Dash is used to create a real-time dashboard that provides visualization of the analysis, profitability predictions, and trends.
+
 🔍 Core Technical Components:
 
 Data Collection and Scraping
 The data collection module is responsible for gathering data from social media platforms (TikTok, Twitter) and blockchain data (Etherscan).
+
 1.1. TikTok Scraper:
 TikTok's API is limited, so we use a combination of API calls and web scraping to collect trending hashtags and creators. BeautifulSoup is used to parse the HTML content of TikTok's trending page.
 
