@@ -1,12 +1,12 @@
 # ===============================
-# Memelord AI Configuration File
+# MemeSentinel Configuration File
 # ===============================
 
 # ===============================
 # General Settings
 # ===============================
 [general]
-app_name = "Memelord AI"
+app_name = "MemeSentinel"
 environment = "production"  # Options: development, testing, production
 port = 8090                 # Main listening port
 host = "0.0.0.0"            # Listening IP address
