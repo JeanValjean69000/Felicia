@@ -1,45 +1,35 @@
-![AFTER TRENCHES, BEACH AND BITCHES (5)](https://github.com/user-attachments/assets/19207bfe-1356-40e7-a219-4b23d14f697d)
+
+![AFTER TRENCHES, BEACH AND BITCHES (7)](https://github.com/user-attachments/assets/dac3263b-9988-4d21-abc5-79412031ac67)
 
 
-🤖 Memelord AI – Memecoin Trend and Profitability Prediction AI 🚀
+🤖 MemeSentinel – Memecoin Trend and Profitability Prediction AI 🚀
 
-Memelord AI is an advanced artificial intelligence system designed to analyze social media trends, on-chain wallet activity, and market dynamics to predict profitable memecoins. By leveraging big data analytics, real-time data scraping, and machine learning models, Memelord AI can identify emerging cryptocurrency trends and provide actionable insights. The code's concept is inspired by BlackRock's Aladdin tool but tailored to the world of memecoins.
+MemeSentinel is an advanced artificial intelligence system designed to analyze social media trends, on-chain wallet activity, and market dynamics to predict profitable memecoins. By leveraging big data analytics, real-time data scraping, and machine learning models, MemeSentinel can identify emerging cryptocurrency trends and provide actionable insights. The code's concept is inspired by BlackRock's Aladdin tool but tailored to the world of memecoins.
 
 🛠️ System Architecture:
-Memelord AI is built with a highly modular, scalable, and distributed architecture that handles real-time data streaming, data processing, and machine learning tasks. The system is designed to be flexible for adding new data sources or integrating advanced prediction models.
+MemeSentinel is built with a highly modular, scalable, and distributed architecture that handles real-time data streaming, data processing, and machine learning tasks. The system is designed to be flexible for adding new data sources or integrating advanced prediction models.
 
 Data Collection & Scraping:
-
-- Real-time data ingestion using official APIs from TikTok, Twitter, and Etherscan.
-- Web scraping is employed to collect data from trending pages, as many platforms have limited API access or rate-limiting issues.
-
+Real-time data ingestion using official APIs from TikTok, Twitter, and Etherscan.
+Web scraping is employed to collect data from trending pages, as many platforms have limited API access or rate-limiting issues.
 Data Processing & Feature Engineering:
-
-- High-frequency data is cleaned and normalized using distributed processing tools like Apache Spark or Dask.
-- Time-series analysis is performed to account for volatility and market changes.
-
+High-frequency data is cleaned and normalized using distributed processing tools like Apache Spark or Dask.
+Time-series analysis is performed to account for volatility and market changes.
 Predictive Modeling:
-
-- A combination of supervised machine learning models such as Random Forests, Gradient Boosting Machines, and XGBoost are used.
-- Advanced techniques like ensemble learning, hyperparameter optimization, and cross-validation are implemented to ensure high prediction accuracy.
-
+A combination of supervised machine learning models such as Random Forests, Gradient Boosting Machines, and XGBoost are used.
+Advanced techniques like ensemble learning, hyperparameter optimization, and cross-validation are implemented to ensure high prediction accuracy.
 Real-Time Monitoring & Alerts:
-
-- Continuous tracking of memecoin trends and wallet transactions to identify profitable opportunities.
-- Real-time alerts are sent via WebSockets, email, or SMS using Twilio API.
-
+Continuous tracking of memecoin trends and wallet transactions to identify profitable opportunities.
+Real-time alerts are sent via WebSockets, email, or SMS using Twilio API.
 Visualization:
-
-- Plotly Dash is used to create a real-time dashboard that provides visualization of the analysis, profitability predictions, and trends.
-
+Plotly Dash is used to create a real-time dashboard that provides visualization of the analysis, profitability predictions, and trends.
 🔍 Core Technical Components:
-1. Data Collection and Scraping
-The data collection module is responsible for gathering data from social media platforms (TikTok, Twitter) and blockchain data (Etherscan).
 
+Data Collection and Scraping
+The data collection module is responsible for gathering data from social media platforms (TikTok, Twitter) and blockchain data (Etherscan).
 1.1. TikTok Scraper:
 TikTok's API is limited, so we use a combination of API calls and web scraping to collect trending hashtags and creators. BeautifulSoup is used to parse the HTML content of TikTok's trending page.
 
-```python
 import requests
 from bs4 import BeautifulSoup
 
@@ -57,12 +47,11 @@ class TikTokScraper:
         response = requests.get(page_url)
         soup = BeautifulSoup(response.text, 'html.parser')
         return [tag.get_text() for tag in soup.find_all('a', class_='hashtag')]
-```
+
 
 1.2. Twitter Scraper (Tweepy):
 Using Tweepy to connect to the Twitter API and extract trending topics and hashtags related to cryptocurrencies and memecoins.
 
-```python
 import tweepy
 
 class TwitterScraper:
@@ -73,12 +62,10 @@ class TwitterScraper:
     def get_trending_hashtags(self, woeid=1):
         trends = self.api.trends_place(woeid)
         return [trend['name'] for trend in trends[0]['trends'] if 'crypto' in trend['name'].lower()]
-```
 
 1.3. Etherscan Blockchain Data Collection:
 We use Etherscan API to track transactions related to memecoins, identifying significant wallet movements and whale behavior.
 
-```python
 import requests
 
 class OnChainAnalyzer:
@@ -109,12 +96,11 @@ class OnChainAnalyzer:
         }
         response = requests.get(self.api_url, params=params)
         return response.json()['result']
-```
+
 
 2. Data Preprocessing & Feature Engineering
 
-```python
-import pandas as pd
+   import pandas as pd
 import numpy as np
 
 def preprocess_trending_data(trending_data):
@@ -127,8 +113,10 @@ def generate_features(wallet_data, trend_data, market_data):
     features = pd.merge(features, market_data, on="coin_id")
     features['transaction_count'] = features['transactions'].apply(lambda x: len(x))
     return features
-```
 
-Memelord AI continues with predictive modeling, real-time alerts, and dashboards for user engagement and decision-making. 🚀🤖
+MemeSentinel continues with predictive modeling, real-time alerts, and dashboards for user engagement and decision-making. 🚀🤖
 
-Feel free to contribute to this repository and help improve Memelord AI's capabilities!
+Feel free to contribute to this repository and help improve MemeSentinel's capabilities!
+
+
+
