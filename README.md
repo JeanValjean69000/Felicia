@@ -1,6 +1,5 @@
 
-![AFTER TRENCHES, BEACH AND BITCHES (7)](https://github.com/user-attachments/assets/dac3263b-9988-4d21-abc5-79412031ac67)
-
+![AFTER TRENCHES, BEACH AND BITCHES (8)](https://github.com/user-attachments/assets/85ed1ca2-f67d-414e-bb3f-1d8f1bb68f74)
 
 🤖 MemeSentinel – Memecoin Trend and Profitability Prediction AI 🚀
 
